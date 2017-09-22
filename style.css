@@ -1,0 +1,110 @@
+
+
+html {
+	font-family: Helvetica, Arial;
+	background-color: #F0F0F0;
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+}
+
+.container {
+	height: 100%;
+	width: 100%;
+}
+
+.header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	line-height: 50px;
+	vertical-align: middle;
+	
+	background-color: #3296FA;	
+}
+
+.header_title {
+	padding-left: 40px;
+	
+	color: #FFFFFF;
+}
+
+.welcome_box {
+	position: relative;
+	width: 900px;
+	height: 600px;
+	margin-top: 300px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	background-color: #FFFFFF;
+}
+
+.welcome {
+	line-height: 100px;
+	width: 100%;
+	margin: auto;
+	
+	text-align: center;
+	
+	background-color: #3296FA;
+}
+
+.welcome_title {
+		
+	color: #FFFFFF;
+}
+
+.form {
+	position: relative;
+	width: 450px;
+	margin-top: 75px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+.form a {
+	font-size: 90%;
+	text-decoration: none;
+	color: #3296FA;
+}
+
+.form input {
+	width: 100%;
+	padding: 10px;
+	
+	box-sizing:border-box
+}
+
+.form button {
+	border: none;
+	padding: 10px 25px;
+	
+	background-color: #3296FA;
+	color: #FFFFFF;
+}
+
+#first {
+	float: left;
+	margin-bottom: 20px;
+}
+
+#last {
+	float: right;
+	margin-bottom: 20px;
+}
+
+
+
+.footer {
+	position: fixed;
+	bottom: 0px;
+	width: 100%;
+	padding: 20px;
+	
+	background-color: #808080;
+	color: #F0F0F0;
+}
