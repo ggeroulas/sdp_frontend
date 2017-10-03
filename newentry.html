@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>New Entry</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header_title">eJournal</h1>
+			</div>
+			<div class="content">
+				
+                    <div class="nav">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a onclick="newJournal()" href="">Create New Journal</a></li>
+                            <li><a>Journals</a></li>
+                            <li><a>Search</a></li>
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+
+                    <div class="textEdit">
+                            <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+                            
+                            <div id="editor">
+                              <p>Edit Entry Here!</p>
+                            </div>
+                    </div>
+
+                    <div class="createOptions">
+                        <button onclick="saveEntry()">Save</button>
+                        <button onclick="saveDraft()">Save as Draft</button>
+                        <button>Cancel</button>
+                    </div>
+                    
+				
+			</div>
+			<div class="footer">
+				<div id="copyright">
+					Copyright &copy; 2017 Team 6ess. All rights reserved.
+				</div>
+			</div>
+        </div>
+        
+        <script>
+                function newJournal() {
+                    
+                    var journalName = prompt("Please enter journal name:", "");
+                    if (journalName == null || journalName == "") {
+                        
+                    } else {
+                        
+                    }
+                    
+                }
+
+                function saveEntry() {
+                    var entryTitle = prompt("Please enter entry title", "")
+                    if (entryTitle == null || entryTitle =="") {
+
+                    } else {
+                        
+                    }
+
+                }
+
+                function saveDraft() {
+                    var draftTitle = prompt("Please enter draft title", "")
+                    if (draftTitle == null || draftTitle =="") {
+
+                    } else {
+                        
+                    }
+                }
+        </script>
+        <script src="https://cdn.quilljs.com/1.0.0/quill.js"></script>
+        <script>
+            var toolbarOptions = ['bold', 'italic', 'underline', 'strike'];
+            
+            var editor = new Quill('#editor', {
+            modules: { toolbar: [
+                [{ header: [1, 2, false] }],
+                ['bold', 'italic', 'underline', 'strike']
+                ]
+            },
+            theme: 'snow'
+        });
+        </script>
+
+    </body>
+
+</html>
+

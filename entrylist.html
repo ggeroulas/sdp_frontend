@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Entry List</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header_title">eJournal</h1>
+			</div>
+			<div class="content">
+				
+                    <div class="nav">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a onclick="newJournal()" href="">Create New Journal</a></li>
+                            <li><a>Journals</a></li>
+                            <li><a>Search</a></li>
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+
+                    <div class="toggles">
+                        <form>
+                            <input type="radio" name="toggle" checked><label>Active Entries</label>
+                            <input type="radio" name="toggle"><label>All Entries</label>
+                            
+                        </form>
+                    </div>
+
+                    <div class="entryList">
+                        <button>New Entry</button>
+                        <ul>
+                            <li><a>Entry 1</a></li> 
+                            <li><a>Entry 2</a></li>
+                            <li><a>Entry 3</a></li>
+                        </ul>
+                        
+                    </div>
+				
+			</div>
+			<div class="footer">
+				<div id="copyright">
+					Copyright &copy; 2017 Team 6ess. All rights reserved.
+				</div>
+			</div>
+        </div>
+        
+        <script>
+                function newJournal() {
+                    
+                    var journalName = prompt("Please enter journal name:", "");
+                    if (journalName == null || journalName == "") {
+                        
+                    } else {
+                        
+                    }
+                    
+                }
+        </script>
+
+    </body>
+
+</html>
+

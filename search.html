@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Search Journals</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header_title">eJournal</h1>
+			</div>
+			<div class="content">
+				
+                    <div class="nav">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a onclick="newJournal()" href="">Create New Journal</a></li>
+                            <li><a>Journals</a></li>
+                            <li><a>Search</a></li>
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+
+                   <div class="searchCriterea"> 
+                       <form>
+                           <input type="text" placeholder="Search">
+                           <label>Select Dates</label>
+                           <label>From</label>
+                           <input type="date">
+                           <label>To</label>
+                           <input type="date">
+                           <button>Search</button>
+                       </form>
+                   </div>
+
+                   <div class="searchResults">
+                        <ul>
+                           <li><a>Entry 1</a></li> 
+                           <li><a>Entry 2</a></li> 
+                           <li><a>Entry 3</a></li> 
+                        </ul>     
+                   </div>
+                    
+				
+			</div>
+			<div class="footer">
+				<div id="copyright">
+					Copyright &copy; 2017 Team 6ess. All rights reserved.
+				</div>
+			</div>
+        </div>
+        
+        <script>
+                function newJournal() {
+                    
+                    var journalName = prompt("Please enter journal name:", "");
+                    if (journalName == null || journalName == "") {
+                        
+                    } else {
+                        
+                    }
+                    
+                }
+
+
+        </script>
+       
+
+    </body>
+
+</html>
+

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>eJournal</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="header">
+				<h1 class="header_title">eJournal</h1>
+			</div>
+			<div class="content">
+				
+                    <div class="nav">
+                        <ul>
+                            <li><a>Home</a></li>
+                            <li><a onclick="newJournal()" href="">Create New Journal</a></li>
+                            <li><a>Journals</a></li>
+                            <li><a>Search</a></li>
+                            <li>Log Out</li>
+                        </ul>
+                    </div>
+
+                    <div class="journalView">
+
+                        <p>
+                            Use navigation above to select from journal entries or to create a new journal.
+                        </p>
+                    </div>
+				
+			</div>
+			<div class="footer">
+				<div id="copyright">
+					Copyright &copy; 2017 Team 6ess. All rights reserved.
+				</div>
+			</div>
+        </div>
+        
+        <script>
+                function newJournal() {
+                    
+                    var journalName = prompt("Please enter journal name:", "");
+                    if (journalName == null || journalName == "") {
+                        
+                    } else {
+                        
+                    }
+                    
+                }
+        </script>
+
+    </body>
+
+</html>
+
