@@ -10,32 +10,39 @@
 				<h1 class="header_title">eJournal</h1>
 			</div>
 			<div class="content">
-				
+				<div class="main_box">
                     <div class="nav">
                         <ul>
-                            <li><a>Home</a></li>
+                            <li><a class="active">Home</a></li>
                             <li><a onclick="newJournal()" href="">Create New Journal</a></li>
-                            <li><a>Journals</a></li>
+                            <li class="dropdown">
+								<a href="javascript:void(0)" class="dropbtn">Journals</a>
+								<div class="dropdown-content">
+								  <a>Journal #1</a>
+								  <a>Journal #2</a>
+								  <a>Journal #3</a>
+								</div>
+							</li>
                             <li><a>Search</a></li>
-                            <li>Log Out</li>
+                            <li style="float:right"><a>Log Out</a></li>
                         </ul>
                     </div>
+					<div class="journal_container">
+						<div class="textEdit">
+								<link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
+								
+								<div id="editor">
+								  <p>Edit Entry Here!</p>
+								</div>
+						</div>
 
-                    <div class="textEdit">
-                            <link href="https://cdn.quilljs.com/1.0.0/quill.snow.css" rel="stylesheet">
-                            
-                            <div id="editor">
-                              <p>Edit Entry Here!</p>
-                            </div>
+						<div class="createOptions">
+							<button onclick="saveEntry()">Save</button>
+							<button onclick="saveDraft()">Save as Draft</button>
+							<button>Cancel</button>
+						</div>
                     </div>
-
-                    <div class="createOptions">
-                        <button onclick="saveEntry()">Save</button>
-                        <button onclick="saveDraft()">Save as Draft</button>
-                        <button>Cancel</button>
-                    </div>
-                    
-				
+				</div>
 			</div>
 			<div class="footer">
 				<div id="copyright">
