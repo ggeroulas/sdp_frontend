@@ -49,19 +49,98 @@
                             var passwrd = document.getElementsByClassName("form").elements["password"];
                             var submt = document.getElementsByClassName("form").elements("submitted");
 
-                            if (submt!= null && submt == yes) {
-                                if (passwrd.length < 6) {
-                                    // needs to check if username and email already exist in system
+							function checkName(first, last) {
+								// checks that the name in the field is valid
+								var valid = false;
+								var re = new RegExp("[A-Z][a-z]+");
+								if (re.test(first) && re.test(last)) {
+    								valid = true;
+								} 
+								
+								return valid;
+							}
 
-                                }
-                            } else {
+							function checkEmail(email) {
+								var re = new RegExp("[A-Za-z\._]+@([a-z_]+\.)+[a-z_]+");
+								if (re.test(email)) {
+									return true;
+								} else {
 
-                                // Error messages, form not filled out
-                            }
-                            
-                            var myObj = { "firstname":firstnm, "lastname":lastnm, "email":email, "username":usernm, "password":passwrd };
-                            var myJSON = JSON.stringify(myObj);
-                            window.location = "demo_json.php?x=" + myJSON;  
+									return false;
+								}
+								// checks that email is valid
+							}
+
+							function checkPassword(password) {
+								var valid = false;
+								var re = new RegExp("[A-Za-z0-9]{6,}");
+								if (password.length() < 7) {
+									if (re.test(password)) {
+										valid = true;
+									}
+
+								} 
+								return valid;
+								// check that passwords match
+								// checks that password is valid
+							}
+
+							function checkUsername() {
+
+								// checks that username is unique
+							}
+
+							function validate() {
+								var valid = false;
+								if (submt!= null && submt == yes) {
+                                	if (checkName()) {
+                                		if (checkEmail()) {
+											if (checkPassword()) {
+												if (checkUsername()) {
+													valid = true;
+												} else {
+													alert ("Username already exists;");
+												} 
+
+											} else {
+
+												// Error password is not long enough, or doesn't match
+												alert ("Password must be at least 6 letters or numbers.");
+											}
+
+										} else {
+
+											// Error: Email is invalid
+											alert ("Email must be valid.");
+										}
+
+                                	} else {
+
+                                		// Error messages: Need to have a valid name!
+										alert ("Name must be valid.");
+                            		}
+								
+								} else {
+
+									alert ("All fields must be complete.");
+								}
+								return valid;
+							}
+
+							function signUp() {
+
+								if (validate()) {
+									
+									var myObj = { "firstname":firstnm, "lastname":lastnm, "email":email, "username":usernm, "password":passwrd };
+                            		var myJSON = JSON.stringify(myObj);
+                            		//window.location = "demo_json.php?x=" + myJSON;  
+									// send store request to server
+									// take user to login page
+
+								}
+
+							}
+
                         </script>
                         </form>
                     </div>
