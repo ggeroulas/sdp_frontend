@@ -23,9 +23,7 @@ body {
 	line-height: 50px;
 	vertical-align: middle;
 	
-	background-color: #3296FA;
-	
-	z-index: 1;
+	background-color: #3296FA;	
 }
 
 .header_title {
@@ -34,16 +32,11 @@ body {
 	color: #FFFFFF;
 }
 
-.content {
-	z-index: -1;
-}
-
 .welcome_box {
 	position: relative;
 	width: 900px;
 	height: 600px;
-	margin-top: 150px;
-	margin-bottom: 150px;
+	margin-top: 300px;
 	margin-left: auto;
 	margin-right: auto;
 	
@@ -114,14 +107,11 @@ body {
 	
 	background-color: #808080;
 	color: #F0F0F0;
-	
-	z-index: 1;
 }
 
 .main_box {
 	position: relative;
 	top: 150px;
-	margin-bottom: 150px;
 	width: 66%;
 	height: 66%;
 	margin-left: auto;
@@ -145,15 +135,6 @@ body {
 .journalView {
 	margin-top: 50px;
 	margin-left: 25px;
-	margin-right: 25px;
-}
-
-.entry {
-	
-	padding: 10px;
-	
-	border-style: groove;
-	border-width: 2px;
 }
 
 .entry_stuff {
@@ -192,23 +173,9 @@ body {
 
 .createOptions {
 	margin: 25px;
-	margin-top: 70px;
 }
 
 .createOptions button {
-	border: none;
-	padding: 10px 25px;
-	
-	background-color: #3296FA;
-	color: #FFFFFF;
-}
-
-.changeOptions {
-	margin: 25px;
-	margin-top: 120px;
-}
-
-.changeOptions button {
 	border: none;
 	padding: 10px 25px;
 	
@@ -300,11 +267,11 @@ body {
 
 }
 
-.nav ul li a:hover, .dropdown:hover .dropbtn {
+li a:hover, .dropdown:hover .dropbtn {
     background-color: #3296FA;
 }
 
-.nav ul li.dropdown {
+li.dropdown {
     display: inline-block;
 }
 
@@ -333,67 +300,9 @@ body {
 
 
 
-.textEdit {
-	height: 300px;
-}
-
-.editOptions {
-	margin: 25px;
-	margin-top: 10px;
-	
-	float: left;
-}
-
-.editOptions button {
-	border: none;
-	padding: 10px 25px;
-	
-	background-color: #3296FA;
-	color: #FFFFFF;
-}
 
 
-.flags {
-	margin: 25px;
-	margin-top: 10px;
-	
-	float: right;
-}
 
-.flags button {
-	border: none;
-	padding: 10px 25px;
-	
-	background-color: #E0E0E0;
-	color: #000000;
-}
 
-.disabledButton {
-	opacity: 0.6;
-    cursor: not-allowed;
-}
 
-.historyViewer {
-	margin-top: 90px;
-	margin-left: 25px;
-	margin-right: 25px;
-		
-	height: 150px;
-	
-	background-color: #F0F0F0;
-}
 
-.historyViewer h3 {
-	padding: 10px;
-	padding-bottom: 0px;
-	
-	color: #A0A0A0;
-}
-
-.historyViewer ul {
-	list-style-type: none;
-	margin: 10px;
-	padding: 10px;
-	
-	background-color: white;
-}
