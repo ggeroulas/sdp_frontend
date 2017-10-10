@@ -182,7 +182,7 @@ body {
 
 .createOptions {
 	margin: 25px;
-	margin-top: 65px;
+	margin-top: 115px;
 }
 
 .createOptions button {
@@ -316,7 +316,9 @@ li.dropdown {
 
 .editOptions {
 	margin: 25px;
-	margin-top: 25px;
+	margin-top: 10px;
+	
+	float: left;
 }
 
 .editOptions button {
@@ -328,4 +330,22 @@ li.dropdown {
 }
 
 
+.flags {
+	margin: 25px;
+	margin-top: 10px;
+	
+	float: right;
+}
 
+.flags button {
+	border: none;
+	padding: 10px 25px;
+	
+	background-color: #E0E0E0;
+	color: #000000;
+}
+
+.disabledButton {
+	opacity: 0.6;
+    cursor: not-allowed;
+}
